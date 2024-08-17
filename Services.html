@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Decadance | Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+	<style>
+	/* Main section styling */
+	main {
+		padding: 2rem 0rem;
+		background-color: #f9f9f9;
+		font-family: Arial, sans-serif;
+	}
+/* Intro section styling */
+	.intro {
+		text-align: center;
+	}
+	.intro h1 {
+		font-size: 4rem;
+		color: #454548;
+	}
+	.intro p {
+		font-size: 1.2rem;
+		color: #333;
+	}
+/* Services section styling */
+	.services {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-bottom: 2rem;
+		background: url(imgbg.jpg);
+	}
+	.service {
+		text-align: center;
+		background-color: #fff;
+		padding: 1rem;
+		margin: 1rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		flex: 1 1 calc(33% - 2rem);
+		box-sizing: border-box;
+	}
+	.service img {
+		max-width: 100px;
+		margin-bottom: 1rem;
+	}
+	.service h3 {
+		font-size: 1.5rem;
+		color: #5A2D0C;
+		margin-bottom: 0.5rem;
+	}
+	.service p {
+		font-size: 1rem;
+		color: #555;
+	}
+/* Testimonials section styling */
+	.testimonials {
+		text-align: center;
+		margin-bottom: 2rem;
+		background: url(imgbg.jpg);
+	}
+	.testimonials h2 {
+		font-size: 2rem;
+		color: #fff;
+		margin-bottom: 1rem;
+	}
+	.testimonial {
+		background-color: #fff;
+		padding: 1rem;
+		margin: 1rem auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		max-width: 600px;
+	}
+	.testimonial p {
+		font-size: 1rem;
+		color: #333;
+	}
+	.testimonial p:last-child {
+		font-style: italic;
+		color: #777;
+	}
+/* Call to action section styling */
+	.cta {
+		text-align: center;
+		background-color: #935A30;
+		color: #fff;
+		padding: 2rem;
+		border-radius: 8px;
+		margin: 2rem auto;
+		max-width: 600px;
+	}
+	.cta h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
+	}	
+	.cta .btn {
+		background-color: #FFD700;
+		color: #8B4513;
+		padding: 0.75rem 1.5rem;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 1rem;
+		transition: background-color 0.3s ease;
+	}
+	.cta .btn:hover {
+		background-color: var(--text-color);
+		border: 1px solid #fff;
+		color: #fff;
+	}
+/* Responsive Styles */
+    @media (max-width: 768px) {
+		.services {
+			flex-direction: column;
+            align-items: center;
+        }
+        .service {
+            flex: 1 1 100%;
+            margin: 1rem 0;
+        }
+        .cta {
+            padding: 1.5rem;
+            margin: 1.5rem auto;
+        }
+        .cta h2 {
+            font-size: 1.75rem;
+        }
+        .cta p {
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .intro h1 {
+            font-size: 2.5rem;
+        }
+        .intro p {
+            font-size: 1rem;
+        }
+        .cta h2 {
+            font-size: 1.5rem;
+        }
+        .cta p {
+            font-size: 0.9rem;
+        }
+        .cta .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+    }
+	</style>
+</head>
+<body>
+
+    <!-- Top header section-->
+    <div class="top-header">
+        <div class="col-1">
+            <i class='bx bx-envelope'></i>
+            <div class="email">
+                <h4>Email us</h4>
+                <span>sweetdecadance@gmail.com</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="logo">
+                <center><img src="Pastry Shop Logo.png" alt="Business Logo"></center>
+            </div>
+        </div>
+        <div class="col-1">
+            <i class='bx bx-mobile-alt'></i>
+            <div class="contact">
+                <h4>Call us</h4>
+                <span>+94 77 511 9723</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Nav bar section-->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Services.html"class="active">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+		<i class = "bx bx-menu" id="menuBtn"></i>
+    </header>
+	<!-- About page section start-->
+	<section class="aboutus">
+		<h1>Services</h1>
+		<span><a href="Web-Page.html">home</a> >> Services</span>
+	</section>
+	
+	<br><br>
+	<main>
+        <section class="intro">
+            <h1>Our Services</h1>
+            <p>Discover the range of services we offer to make your events special.</p>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <img src="service_images\customize.jpg "alt="Service 1">
+                <h3>Customize Cakes</h3>
+                <p>Custom designs for birthdays, weddings, anniversaries, and other special occasions and cakes designed around specific themes like cartoons, superheroes, hobbies, etc.</p>
+            </div>
+            <div class="service">
+                <img src="service_images\delivery.png" alt="Service 2">
+                <h3>Delivery service</h3>
+                <p>Delivery of cakes and pastries within Western Province. <br >Special delivery services for events, ensuring cakes arrive in perfect condition.</p>
+            </div>
+            <div class="service">
+                <img src="service_images\Consultation.png" alt="Service 3">
+                <h3>Cake Consultations</h3>
+                <p>Meetings to discuss custom cake designs and details.<br>Sessions will be conducted for customers to sample different cake flavors before making a decision.</p>
+            </div>
+			
+			
+			<div class="service">
+                <img src="service_images\weddingcake.jpg" alt="Service 4">
+                <h3>Wedding Cake</h3>
+                <p>Customized multi-tiered cakes for weddings.</p>
+            </div>
+			<div class="service">
+                <img src="service_images\cakeplatter.jpg" alt="Service 5">
+                <h3>Party Platters</h3>
+                <p>Assorted mini desserts and pastries for parties and gatherings.</p>
+            </div>
+			<div class="service">
+                <img src="service_images\Special Dietary Options.jpeg" alt="Service 5">
+                <h3>Special Dietary Options</h3>
+                <p>Pre ordered Cakes made without gluten for those with dietary restrictions, cakes made without animal products, options for customers looking to reduce sugar intake.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"The cupcake was sooo yummy darling😋 Thank you soo much 🥰<br>Great service! Highly recommended."</p>
+                <p>- Hiruni Gunawardhana</p>
+            </div>
+            <div class="testimonial">
+                <p>"The cake tasted super moist and fresh😊 Everyone enjoyed it so much. Was upto my likings.<br>Keep striving on making everyone's day special with you magic🤗❤ Good luck!"</p>
+                <p>- Mavindi Rathnayeke </p>
+            </div>
+			<div class="testimonial">
+                <p>"Super Delicious and amazing cake, Will definitely comeback🤗❤ "</p>
+                <p>- Vibodha Gamanayake </p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Book?</h2>
+            <p>Contact us today to schedule your service!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+    </main>
+
+	<!-- footer section-->
+	<section class="footer">
+		<div class="footer-row">
+			<div class="footer-col-one">
+                <img src="Pastry Shop Logo.png" alt="Pastry Shop Logo" height="220px">
+			</div>
+			<div class="footer-col-two">
+				<div class="col_1">
+					<h5>get in touch</h5>
+					<span><i class="bx bx-location-plus"></i>Temple Rd, Horape, Ragama</span>
+					<span><i class="bx bx-envelope"></i>sakivo76@gmail.com</span>
+					<span><i class="bx bx-phone"></i>075 034 4245</span>
+					<div class="social">
+						<a href="#" class="social-btn"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="social-btn"><i class="bx bxl-twitter"></i></a>
+						<a href="https://web.facebook.com/decadanceswweet" class="social-btn"><i class="bx bxl-facebook"></i></a>
+					</div>
+				</div>
+				<div class="col_1">
+					<h5>quick links</h5>
+					<a href="index.html"><i class="bx bx-right-arrow-alt"></i>Home</a>
+					<a href="about.html"><i class="bx bx-right-arrow-alt"></i>About Us</a>
+					<a href="Menu.html"><i class="bx bx-right-arrow-alt"></i>Menu</a>
+					<a href="Services.html"><i class="bx bx-right-arrow-alt"></i>Our Services</a>
+					<a href="contact.html"><i class="bx bx-right-arrow-alt"></i>Contact Us</a>
+				</div>
+				<div class="col_1">
+					<h5>News letter</h5>
+					<p>Subscribe to our newsletter to stay updated with our latest offers and news.</p>
+					<div class="inputBox">
+						<input type="text" placeholder="Your email">
+						<a href="login.html" class="btn">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<span>&copy; Sweet Decadance All Rights Reserved</span>
+		</div>
+		<div class="top-button">
+			<a href="#"><i class="bx bx-chevrons-up"></i></a>
+		</div>
+	</section>
+
+	
+	<!-- js file -->
+	<script src="script.js"></script>
+
+</body>
+</html>

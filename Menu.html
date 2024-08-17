@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Decadance | Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+    :root {
+		--main-color: #f49417;
+		--text-color: #454548;
+		--background-color: #2d2a2a;
+        --button-bg: #333;
+        --button-color: #fff;
+        }
+
+	/*CSS OF MENU PAGE CONTENT*/
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #fff;
+		color: var(--text-color);
+		margin-top: 0;
+		padding: 0;
+		
+	}
+	.product {
+		padding: 2rem 7%;
+		margin-bottom: 1rem;
+		background:url(imgbg.jpg) ;
+	}
+	.heading {
+		text-align: center;
+		font-size: 2.6rem;
+		margin-bottom: 3rem;
+		color: #454548;
+	}
+	h3 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		color: #FFD700;
+		text-align: center;
+		font-family: "Dancing Script", cursive;
+	}
+	/*Getting the line after the h3 text*/
+	h3::after {
+		content: '';
+		display: block;
+		width: 100px; 
+		height: 3px; 
+		background-color: #FFD700; 
+		margin: 0.5rem auto 0; 
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.product-row {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+		margin-bottom: 4rem;
+	}
+	.box {
+		background-color: #f5f5f5;
+		padding: 1rem;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s;
+	}
+	.box:hover {
+		transform: translateY(-10px);
+	}
+	.img img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+	}
+	.cake-content {
+		margin-top: 1rem;
+	}
+	.cake-content h5, .Cupcakes h5, .Gateau h5 {
+		font-size: 1.4rem;
+		margin: 0.5rem 0;
+		color: #FFD700;
+	}
+	.cake-content p {
+		font-size: 1rem;
+		color: var(--text-color);
+	}
+	.ordernow button {
+		padding: 0.3rem 1rem;
+		background-color: #FFD700;
+		color:#8B4513;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+	.ordernow button:hover {
+		background: var(--text-color);
+		border: 1px solid #fff;
+		color:#fff;
+	}
+	@media(max-width: 991px) {
+        .member .member-row {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media(max-width: 550px) {
+        .member .member-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media(max-width: 1150px) {
+        .product-row {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media(max-width: 991px) {
+        .product-row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width: 550px) {
+        .product-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Top header section-->
+    <div class="top-header">
+        <div class="col-1">
+            <i class='bx bx-envelope'></i>
+            <div class="email">
+                <h4>Email us</h4>
+                <span>sweetdecadance@gmail.com</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="logo">
+                <center><img src="Pastry Shop Logo.png" alt="Business Logo"></center>
+            </div>
+        </div>
+        <div class="col-1">
+            <i class='bx bx-mobile-alt'></i>
+            <div class="contact">
+                <h4>Call us</h4>
+                <span>+94 77 511 9723</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Nav bar section-->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Menu.html"class="active">Menu</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+		<i class = "bx bx-menu" id="menuBtn"></i>
+    </header>
+	
+	<!-- About page section start-->
+    <section class="aboutus">
+        <h1>Menu</h1>
+        <span><a href="Web-Page.html">home</a> >> Menu</span>
+    </section>
+	
+	<!-- Product Section -->
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+		
+        <section class="product" id="CelebrateCake">
+			<h3>Celebration Cakes</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes/bday_cake1.png" alt="Birthday Cake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 01</h5>
+                        <p>1kg - Rs. 4500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-5.png" alt="Vanilla Cake">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 02</h5>
+                        <p>1kg - Rs. 5500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-11.png" alt="Birthday Cake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 03</h5>
+                        <p>1kg - Rs. 6000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-2.jpg" alt="Birthday Cake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 04</h5>
+                        <p>1kg - Rs. 4500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-7.png" alt="Birthday Cake 5">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 05</h5>
+                        <p>1kg - 6000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-8.png" alt="Birthday Cake 6">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 06</h5>
+                        <p>1kg - Rs. 6500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-6.png" alt="Birthday Cake 7">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 07</h5>
+                        <p>1kg - Rs. 4000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-9.png" alt="Birthday Cake 8">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 08</h5>
+                        <p>1kg - Rs. 6000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-10.png" alt="Birthday Cake 9">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 09</h5>
+                        <p>1kg - Rs. 5000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-1.jpg" alt="Birthday Cake 10">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 10</h5>
+                        <p>1kg - Rs. 7000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-12.jpg" alt="Birthday Cake 11">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 11</h5>
+                        <p>1kg - Rs. 2200</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="Celebration cakes\cake-4.png" alt="Birthday Cake 12">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Celebration Cake 12</h5>
+                        <p>1kg - Rs. 6500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!--cupcakes-->
+		<section class="product" id="Cupcakes">
+			<h3>Cupcakes</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-2.png" alt="Cupcake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Chocolate Cupcake</h5>
+                        <p>Rs. 200</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-3.png" alt="Cupcake 2">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Vanilla Cupcake </h5>
+                        <p>Rs. 180</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-1.png"alt="Cupcake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Redvelvet Cupcake</h5>
+                        <p>Rs. 650</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-4.png" alt="Cupcake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Carrot Cupcake</h5>
+                        <p>Rs. 550</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-5.png" alt="Cupcake 5">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Strawberry Cupcake </h5>
+                        <p>Rs. 550</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="cupcake\cup-6.png" alt="Cupcake 6">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Oreo Cupcake</h5>
+                        <p>Rs. 650</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section >
+		<!--Gataue Cakes-->
+		<section class="product" id="Gateau">
+			<h3>Gateau Cakes</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="gateau cakes\gateau1.png" alt="Cupcake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Black Forest Cake</h5>
+                        <p>Whole cake - Rs. 9000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="gateau cakes\gateau3.png" alt="Cupcake 2">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Redvelvet Cake</h5>
+                        <p>Whole cake - Rs. 12000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="gateau cakes\gateau2.png" alt="Cupcake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Chocolate Sponge Cake</h5>
+                        <p>Whole cake - Rs. 9500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="gateau cakes\gateau5.png" alt="Cupcake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Carrot Cake</h5>
+                        <p>Whole cake - Rs. 10000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="gateau cakes\gateau4.png" alt="Cupcake 5">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Pineapple Gataue</h5>
+                        <p>Whole cake - Rs. 12000</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section >
+		
+		<!--Dessert-->
+		<section class="product" id="Dessert">
+			<h3>Desserts</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="dessert\dessert-3.jpeg" alt="Cupcake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Tiramisu</h5>
+                        <p>1 piece - Rs. 600</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="dessert\dessert-2.jpg" alt="Cupcake 2">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Brownies</h5>
+                        <p>1 piece - Rs. 250</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="dessert\dessert-4.jpeg"alt="Cupcake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Tre`s Leche</h5>
+                        <p>1 piece - Rs. 950</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="dessert\dessert-1.jpg" alt="Cupcake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Crinkle Cookies </h5>
+                        <p>4 cookie pack - Rs. 600</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="dessert\dessert-5.jpg" alt="Cupcake 5">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Fruit Triffle</h5>
+                        <p>1 dessert cup - Rs. 500</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<!--Beverages-->
+		<section class="product" id="Drinks">
+			<h3>Beverages</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="drinks\drink-1.png" alt="Cupcake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Cappucino</h5>
+                        <p>Rs. 650</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="drinks\drink-2.png" alt="Cupcake 2">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Iced Matcha </h5>
+                        <p>Rs. 850</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="drinks\drink-3.png"alt="Cupcake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Americano</h5>
+                        <p>Rs. 400</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="drinks\drink-4.png" alt="Cupcake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Affogato</h5>
+                        <p>Rs. 550</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="drinks\drink-5.png" alt="Cupcake 5">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Blueberry Milkshake</h5>
+                        <p>Rs. 800</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!--SL Corner-->
+		<section class="product" id="SL_Corner">
+			<h3>Sri Lankan Corner</h3>
+			<div class="product-row">
+                <div class="box">
+                    <div class="img">
+                        <img src="sl-corner\milktofee.jpg" alt="Cupcake 1">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Milk Toffee</h5>
+                        <p>1 piece - Rs. 80</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="sl-corner\polcake.jpg" alt="Cupcake 2">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Pol Cake</h5>
+                        <p>1 piece - Rs. 150</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="sl-corner\lovecake.jpeg" alt="Cupcake 3">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Love Cake</h5>
+                        <p>1 piece - Rs. 200</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="sl-corner\datecake.jpg" alt="Cupcake 4">
+                    </div>
+                    <div class="cake-content">
+                        <h5>Date Cake</h5>
+                        <p>1 piece - Rs. 200</p>
+                        <div class="ordernow">
+                            <button class="order-now-button">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	<!-- footer section-->
+	<section class="footer">
+		<div class="footer-row">
+			<div class="footer-col-one">
+                <img src="Pastry Shop Logo.png" alt="Pastry Shop Logo" height="220px">
+			</div>
+			<div class="footer-col-two">
+				<div class="col_1">
+					<h5>get in touch</h5>
+					<span><i class="bx bx-location-plus"></i>Temple Rd, Horape, Ragama</span>
+					<span><i class="bx bx-envelope"></i>sakivo76@gmail.com</span>
+					<span><i class="bx bx-phone"></i>075 034 4245</span>
+					<div class="social">
+						<a href="https://web.facebook.com/decadanceswweet" class="social-btn"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="social-btn"><i class="bx bxl-twitter"></i></a>
+						<a href="#" class="social-btn"><i class="bx bxl-facebook"></i></a>
+					</div>
+				</div>
+				<div class="col_1">
+					<h5>quick links</h5>
+					<a href="index.html"><i class="bx bx-right-arrow-alt"></i>Home</a>
+					<a href="about.html"><i class="bx bx-right-arrow-alt"></i>About Us</a>
+					<a href="Menu.html"><i class="bx bx-right-arrow-alt"></i>Menu</a>
+					<a href="Services.html"><i class="bx bx-right-arrow-alt"></i>Our Services</a>
+					<a href="contact.html"><i class="bx bx-right-arrow-alt"></i>Contact Us</a>
+				</div>
+				<div class="col_1">
+					<h5>News letter</h5>
+					<p>Subscribe to our newsletter to stay updated with our latest offers and news.</p>
+					<div class="inputBox">
+						<input type="text" placeholder="Your email">
+						<a href="login.html" class="btn">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<span>&copy; Sweet Decadance All Rights Reserved</span>
+		</div>
+		<div class="top-button">
+			<a href="#"><i class="bx bx-chevrons-up"></i></a>
+		</div>
+	</section>
+
+	<!-- js file -->
+	<script src="script.js"></script>
+	
+</body>
+</html>

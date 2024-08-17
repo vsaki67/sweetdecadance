@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Decadance | Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<style>
+	.container {
+		display: flex;
+		justify-content: space-between; 
+		max-width: 1000px;
+		margin: 0 auto; 
+		background: none; 
+		padding: 20px; 
+		margin-bottom: 5rem;
+	}
+	.text {
+		flex: 1; 
+		padding: 20px;
+		text-align: center;
+	}
+	.text h2{
+		font-size: 3.5rem;
+		color: #454548;
+	}
+	.text p{
+		font-size: 1.8rem;
+		color: #454548;
+	}
+	.map {
+		flex: 1;
+		padding: 5px;
+		border: 3px solid #8B4513; /*iframe border */
+	}
+	.map iframe {
+		width: 100%; /* Make iframe responsive */
+		height: 450px;     
+	}
+	@media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .text {
+            flex: 1;
+        }
+        .map {
+            flex: 1;
+        }
+        .top-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .top-header .col-1, .top-header .col-2 {
+            flex: 1;
+        }
+        /*.navbar ul {
+            flex-direction: row;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }*/
+        .contact_us .contact-row {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contact_us .box, .footer-col-one, .footer-col-two {
+            margin: 0;
+        }
+        .contact_us .form {
+            width: 50%;
+        }
+        .contact_us .input-row {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contact_us .input-row input {
+            width: 48%;
+            margin: 0;
+        }
+    }
+	
+	/* Top header section starts */
+.top-header1 {
+    width: 100%;
+    padding: 0 9.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.top-header1 .col-1,
+.top-header1 .col-2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+.top-header1 .col-1 i {
+    color: #5A2D0C;
+    font-size: 2.2rem;
+}
+.top-header1 .col-1 h4 {
+    color: var(--text-color);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.top-header1 .col-1 span {
+    color: #6D441E;
+    font-size: 13px;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+}
+@media (max-width: 1150px) {
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .top-header .col-1, .top-header .col-2 {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+}
+	</style>
+</head>
+<body>
+
+	<!-- Top header section-->
+    <div class="top-header1">
+        <div class="col-1">
+            <i class='bx bx-envelope'></i>
+            <div class="email">
+                <h4>Email us</h4>
+                <span>sweetdecadance@gmail.com</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="logo">
+                <center><img src="Pastry Shop Logo.png" alt="Business Logo"></center>
+            </div>
+        </div>
+        <div class="col-1">
+            <i class='bx bx-mobile-alt'></i>
+            <div class="contact">
+                <h4>Call us</h4>
+                <span>+94 77 511 9723</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Nav bar section-->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+		<i class = "bx bx-menu" id="menuBtn"></i>
+    </header>
+	
+	<!-- Contact page section start -->
+	<section class="aboutus">
+		<h1>Contact Us</h1>
+		<span><a href="Web-Page.html">home</a> >> contact</span>
+	</section>
+	<!-- Contact page section start -->
+	 <section class="contact_us">
+        <div class="contact-row">
+            <div class="box">
+                <div class="info">
+                    <i class="bx bx-location-plus"></i>
+                    <span>Our Cake Shop</span>
+                    <p>Temple Rd, Horape, Ragama</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <i class="bx bx-envelope"></i>
+                    <span>Email Us</span>
+                    <p>sakivo76@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <i class="bx bx-phone"></i>
+                    <span>Call Us</span>
+                    <p>075 034 4245</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="input-row">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Your Contact Number">
+            </div>
+            <input type="text" placeholder="Subject">
+            <textarea cols="30" rows="5" placeholder="Message"></textarea>
+            <div class="button">
+                <button>Send Message</button>
+            </div>
+        </div>
+    </section>
+	<!-- Location - Googlemap  section-->
+	<div class="container">
+        <div class="text">
+            <br><h2>Opening Times</h2>
+            <br><p>9 a.m. - 7 p.m.<br>(Monday - Friday)<br><br>
+			8 a.m. - 8 p.m. <br>(Saturday & Sunday)
+            </p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9101025755335!2d79.92722637475804!3d7.019852792981768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f82e323494f5%3A0xcd6ebd5dab9a4e80!2sTemple%20Rd!5e0!3m2!1sen!2slk!4v1723865509675!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+	
+	<!-- footer section-->
+	<section class="footer">
+		<div class="footer-row">
+			<div class="footer-col-one">
+                <img src="Pastry Shop Logo.png" alt="Pastry Shop Logo" height="220px">
+			</div>
+			<div class="footer-col-two">
+				<div class="col_1">
+					<h5>get in touch</h5>
+					<span><i class="bx bx-location-plus"></i>Temple Rd, Horape, Ragama</span>
+					<span><i class="bx bx-envelope"></i>sakivo76@gmail.com</span>
+					<span><i class="bx bx-phone"></i>075 034 4245</span>
+					<div class="social">
+						<a href="#" class="social-btn"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="social-btn"><i class="bx bxl-twitter"></i></a>
+						<a href="https://web.facebook.com/decadanceswweet" class="social-btn"><i class="bx bxl-facebook"></i></a>
+					</div>
+				</div>
+				<div class="col_1">
+					<h5>quick links</h5>
+					<a href="index.html"><i class="bx bx-right-arrow-alt"></i>Home</a>
+					<a href="about.html"><i class="bx bx-right-arrow-alt"></i>About Us</a>
+					<a href="Menu.html"><i class="bx bx-right-arrow-alt"></i>Menu</a>
+					<a href="Services.html"><i class="bx bx-right-arrow-alt"></i>Our Services</a>
+					<a href="contact.html"><i class="bx bx-right-arrow-alt"></i>Contact Us</a>
+				</div>
+				<div class="col_1">
+					<h5>News letter</h5>
+					<p>Subscribe to our newsletter to stay updated with our latest offers and news.</p>
+					<div class="inputBox">
+						<input type="text" placeholder="Your email">
+						<a href="login.html" class="btn">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<span>&copy; Sweet Decadance All Rights Reserved</span>
+		</div>
+		<div class="top-button">
+			<a href="#"><i class="bx bx-chevrons-up"></i></a>
+		</div>
+	</section>
+
+	
+	<!-- js file -->
+	<script src="script.js"></script>
+
+</body>
+</html>

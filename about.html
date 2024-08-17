@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Decadence | Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+	<style>
+        /* About page section start */
+    .aboutus {
+        background: var(--text-color);
+        color: #fff;
+        text-align: center;
+    }
+    .aboutus h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+        .aboutus span {
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+        .aboutus span a {
+            color: #fff;
+            font-size: 1rem;
+        }
+        .aboutus span a:hover {
+            color: var(--light-color);
+        }
+
+        /* Home Page section */
+	.content {
+		position: relative;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	.text-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 5rem;
+		border-radius: 10px;
+		color: #fff;
+		text-align: center;
+		width: 80%;
+		max-width: 2000px;
+	}
+	.text-overlay h3{
+		font-size: 3.5rem;
+	}
+	.text-overlay p {
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+	.popup-images {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	.popup-images img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: none;
+	}
+	.popup-images img.active {
+		display: block;
+	}	
+	.navigation-dots {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		gap: 10px;
+		z-index: 3;
+	}
+	.navigation-dot {
+		width: 10px;
+		height: 10px;
+		background-color: black;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.navigation-dot.active {
+		background-color: white;
+	}
+    </style>
+</head>
+<body>
+    <!-- Top header section -->
+    <div class="top-header">
+        <div class="col-1">
+            <i class='bx bx-envelope'></i>
+            <div class="email">
+                <h4>Email us</h4>
+                <span>sweetdecadence@gmail.com</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="logo">
+                <center><img src="Pastry Shop Logo.png" alt="Business Logo"></center>
+            </div>
+        </div>
+        <div class="col-1">
+            <i class='bx bx-mobile-alt'></i>
+            <div class="contact">
+                <h4>Call us</h4>
+                <span>+94 77 511 9723</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Nav bar section -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <i class="bx bx-menu" id="menuBtn"></i>
+    </header>
+    
+    <!-- About page section start -->
+    <section class="aboutus">
+        <h1>About Us</h1>
+        <span><a href="Web-Page.html">Home</a> >> About</span>
+    </section>
+    
+	<!-- Sliding Images section -->
+    <section class="content">
+        <div class="text-overlay">
+            <h3>Always in Good Taste!</h3>
+			<p>At Sweet Decadence, it's our mission to bring you the largest selection of cakes and other great qaulity desserts on the market. Along with a vast wealth of <br>
+			knowledge in the products we sell, Sweet Decadence carries everything you could possibly imagine and more. We're here for our customers, and want <br>
+			each one of them to have a unique, of-of-a-kind experience at our amazing Cake Shop.</p>
+        </div>
+        <div class="popup-images">
+            <img src="aboutpage_images\LowRes.jpg" alt="LowRes Image" class="active">
+            <img src="aboutpage_images\Sugar_Cakes.jpg" alt="Sugar Cakes Image">
+        </div>
+        <div class="navigation-dots">
+            <div class="navigation-dot active"></div>
+            <div class="navigation-dot"></div>
+        </div>
+    </section>
+	
+    <!-- About us section start -->
+    <section class="about section">
+        <h5>About Us</h5>
+        <h1>Our Journey</h1>
+        <div class="about-row">
+            <div class="col-1">
+                <img src="Business logo.jpg" alt="Business Logo">
+            </div>
+            <div class="col-2">
+                <p class="text">Sweet Decadence began as a humble home bakery, founded on a passion for creating exquisite, handcrafted cakes and cupcakes. Over the years, we've delighted friends, family, and a growing list of loyal customers with our delectable baked goods. At Sweet Decadence, we are committed to bringing the same level of care and artistry to every cake and cupcake we make.<br><br>Whether you’re celebrating a birthday, an anniversary, or simply craving something sweet, we have the perfect treat for you.<br><br>We pride ourselves on our exceptional customer service and prompt delivery, ensuring that our delicious creations reach you fresh and on time. Experience the joy of Sweet Decadence, where every cake tells a story of love and passion.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Number section start -->
+    <section style="margin-bottom: 5rem;" class="number-section">
+        <div class="number-row">
+            <div class="num-col">
+                <div class="icon">
+                    <i class="bx bx-star"></i>
+                </div>
+                <div class="name">
+                    <h4>Our Experience</h4>
+                    <span class="num" data-value="900">0000</span>
+                </div>
+            </div>
+            <div class="num-col">
+                <div class="icon">
+                    <i class="bx bx-user-plus"></i>
+                </div>
+                <div class="name">
+                    <h4>Cake Specialist</h4>
+                    <span class="num" data-value="870">0000</span>
+                </div>
+            </div>
+            <div class="num-col">
+                <div class="icon">
+                    <i class="bx bx-check"></i>
+                </div>
+                <div class="name">
+                    <h4>Completed Projects</h4>
+                    <span class="num" data-value="950">0000</span>
+                </div>
+            </div>
+            <div class="num-col">
+                <div class="icon">
+                    <i class="bx bx-group"></i>
+                </div>
+                <div class="name">
+                    <h4>Happy Clients</h4>
+                    <span class="num" data-value="890">0000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+	<!-- footer section-->
+	<section class="footer">
+		<div class="footer-row">
+			<div class="footer-col-one">
+                <img src="Pastry Shop Logo.png" alt="Pastry Shop Logo" height="220px">
+			</div>
+			<div class="footer-col-two">
+				<div class="col_1">
+					<h5>get in touch</h5>
+					<span><i class="bx bx-location-plus"></i>Temple Rd, Horape, Ragama</span>
+					<span><i class="bx bx-envelope"></i>sakivo76@gmail.com</span>
+					<span><i class="bx bx-phone"></i>075 034 4245</span>
+					<div class="social">
+						<a href="#" class="social-btn"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="social-btn"><i class="bx bxl-twitter"></i></a>
+						<a href="https://web.facebook.com/decadanceswweet" class="social-btn"><i class="bx bxl-facebook"></i></a>
+					</div>
+				</div>
+				<div class="col_1">
+					<h5>quick links</h5>
+					<a href="index.html"><i class="bx bx-right-arrow-alt"></i>Home</a>
+					<a href="about.html"><i class="bx bx-right-arrow-alt"></i>About Us</a>
+					<a href="Menu.html"><i class="bx bx-right-arrow-alt"></i>Menu</a>
+					<a href="Services.html"><i class="bx bx-right-arrow-alt"></i>Our Services</a>
+					<a href="contact.html"><i class="bx bx-right-arrow-alt"></i>Contact Us</a>
+				</div>
+				<div class="col_1">
+					<h5>News letter</h5>
+					<p>Subscribe to our newsletter to stay updated with our latest offers and news.</p>
+					<div class="inputBox">
+						<input type="text" placeholder="Your email">
+						<a href="login.html" class="btn">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<span>&copy; Sweet Decadance All Rights Reserved</span>
+		</div>
+		<div class="top-button">
+			<a href="#"><i class="bx bx-chevrons-up"></i></a>
+		</div>
+	</section>
+    
+    	<!-- js file -->
+	<script src="script.js"></script>
+
+</body>
+</html>
